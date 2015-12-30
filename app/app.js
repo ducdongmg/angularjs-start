@@ -4,4 +4,8 @@ myMainApp.controller('ShowMessage', function($scope, $rootScope) {
 });
 
 myMainApp.controller('ShowContent', function($scope) {
+	$scope.kq = 'ket qua la: ';
+	$scope.tinhkq = function(){
+		return $scope.kq += parseInt($scope.so1) + $scope.pheptoan + parseInt($scope.so2);
+	}
 });
