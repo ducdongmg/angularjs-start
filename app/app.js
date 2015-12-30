@@ -9,3 +9,9 @@ myMainApp.controller('ShowContent', function($scope) {
 		return $scope.kq += parseInt($scope.so1) + $scope.pheptoan + parseInt($scope.so2);
 	}
 });
+// define new directive
+myMainApp.directive("ngNewdirective", function () {
+	return {
+		template: "<b> Content </b>"
+	};
+} );
