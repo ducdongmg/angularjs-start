@@ -1,38 +1,15 @@
-<html>
-	<head>
-		<title>angularjs start</title>
-
-		<script type="text/javascript" src="app/components/angular.min.js"></script>
-		<script type="text/javascript" src="app/app.js"></script>
-	</head>
-	<body>
-		<!-- app -->
-		<div ng-app="myApp">
-			<!-- controller -->
-			<!--
-			<input ng-model="username">
-			<div>{{username}}</div>
-			<div ng-controller="ShowMessage">
-				<input type="text" ng-model="data.message">
-				<b>{{data.message}}</b>
-				<b>{{data.title}}</b>
-			</div>
-			<div ng-controller="ShowContent">
-				<input type="text" ng-model="so1">
-				<select ng-model="pheptoan">
-				<option value="+">+</option>
-				<option value="-">-</option>
-				<option value="*">*</option>
-				<option value="/">/</option>
-				<input type="text" ng-model="so2">
-			</select>
-			<button ng-click="tinhkq();">Ket qua</button>
-			{{kq}}
-			</div>
-			-->
-			<!-- directive -->
-			<div ng-newdirective=""></div>
-		</div>
-	</body>
-
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example - example-example12-production</title>
+	<script type="text/javascript" src="app/components/angular.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+</head>
+<body ng-app="docsTemplateUrlDirective">
+	<div ng-controller="Controller">
+		<div my-customer></div>
+		<div my-customer-template></div>
+	</div>
+</body>
 </html>
