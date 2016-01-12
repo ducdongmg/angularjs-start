@@ -9,12 +9,12 @@ angular.module('docsTemplateUrlDirective', [])
   }])
   .directive('myCustomer', function() {
     return {
-      template: '<b>my-customer.html</b>'
+      restrict: "E",
+      // Use to point what is the type of directive will be use
+      // A: Attribute <div my-customer></div>
+      // C: Class <div class="my-customer"></div>
+      // E: Element <my-customer></my-customer>
+      template: '<b>my example</b>'
     };
   })
-  .directive('myCustomerTemplate', function() {
-    return {
-      templateUrl: 'app/templates/login_form.html'
-    };
-  });
 })(window.angular);
